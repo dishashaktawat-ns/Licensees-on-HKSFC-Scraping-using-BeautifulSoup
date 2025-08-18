@@ -15,26 +15,6 @@ This project extracts, transforms, and stores all licensees and registered insti
 * Demo
 * Dependencies
 
-## Core Requirements
-
-### Data Ingestion
-
-* Extract relevant data from HKSFC public register API.
-* Handle schema evolution and missing/new fields.
-* Support both active and all licensees.
-
-### Data Transformation
-
-* Normalize JSON responses to a flat, tabular structure.
-* Clean, enrich, and validate data.
-* Log schema changes and data quality metrics.
-
-### Deliverables
-
-* Modular and well-documented Python code.
-* CSV output containing all licensees and related details.
-* README explaining pipeline, schema, and usage.
-
 ## Package Structure
 
 ```
@@ -49,10 +29,8 @@ hksfc_scraper/
 │   ├── transform.py          # Data normalization and validation
 │   └── pipeline.py           # Main pipeline orchestrator
 │
-├── tests/                    # Optional unit tests
 ├── requirements.txt          # Dependencies
 ├── README.md
-└── setup.py                  # Optional for packaging
 ```
 
 ## Installation
@@ -60,7 +38,7 @@ hksfc_scraper/
 1. Clone the repository:
 
 ```
-git clone https://github.com/<your_username>/hksfc_scraper.git
+git clone https://github.com/dishashaktawat-ns/Licensees-on-HKSFC-Scraping-using-BeautifulSoup.git
 cd hksfc_scraper
 ```
 
@@ -89,7 +67,7 @@ pip install -e .
 ### Run the pipeline
 
 ```
-python -m src.pipeline
+python -m hksfc_scraper.main
 ```
 
 This will:
@@ -97,7 +75,6 @@ This will:
 * Fetch all licensees (individuals and corporations)
 * Handle pagination
 * Normalize the JSON data
-* Save results to sfc\_data\_all.csv
 
 ### Extract individual license details
 
