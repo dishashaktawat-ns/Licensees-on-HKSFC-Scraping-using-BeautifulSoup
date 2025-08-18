@@ -21,7 +21,6 @@ def get_page(licstatus, role_type, ratype, name_start_letter, page=1, limit=LIMI
     if res.status_code == 200:
         return res.json()
     else:
-        print(f"⚠️ Failed request: {res.status_code} for {form_data}")
         return {"items": [], "totalCount": 0}
 
 
