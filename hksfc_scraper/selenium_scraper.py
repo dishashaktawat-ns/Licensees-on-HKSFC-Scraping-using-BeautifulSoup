@@ -1,3 +1,4 @@
+# we are not using this method of scrapping currently 
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
