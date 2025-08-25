@@ -39,7 +39,7 @@ hksfc_scraper/
 1. Clone the repository:
 
 ```
-git clone https://github.com/dishashaktawat-ns/Licensees-on-HKSFC-Scraping-using-BeautifulSoup.git
+git clone https://github.com/dishashaktawat-ns/Licensees-on-HKSFC-Scraping-using-Request-firecrawl-BeautifulSoup.git
 cd hksfc_scraper
 ```
 
