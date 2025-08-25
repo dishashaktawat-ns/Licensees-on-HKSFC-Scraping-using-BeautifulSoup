@@ -25,7 +25,8 @@ hksfc_scraper/
 │   ├── config.py             # Constants like BASE_URL, HEADERS, etc.
 │   ├── utils.py              # Helper functions
 │   ├── api_client.py         # API fetching functions
-│   ├── selenium_scraper.py   # Selenium-based individual license details extraction
+│   ├── corporation_scraper.py# Corporation license details extraction
+│   ├── individual_scraper.py # individual license details extraction
 │   ├── transform.py          # Data normalization and validation
 │   └── pipeline.py           # Main pipeline orchestrator
 │
